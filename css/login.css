@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   http://www.cssportal.com/css3-menu-generator/#
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    /*background:url(../images/background.png) top left;*/
+    margin:0;
+    padding:0;
+    font-family:"Myriad Pro", Arial, sans-serif;
+    color:#FFFFFF;
+}
+
+footer {
+    width:1000px;
+    margin:0 auto;
+    padding:10px 0 20px;
+    font-size:.9em;
+    border-top:1px #3E3E3E solid;
+    background-color:#242424;
+    text-align: center;
+}
+
+#wrapper {
+    width: 1000px;
+    margin:50px auto;
+    overflow:hidden;
+    padding:10px 0 20px;
+    height: 500px;
+    text-align:inherit;
+    font-size:1.1em;
+    
+}
+
+header {
+    width:1000px;
+    margin:0 auto;
+    padding:10px 0 20px;
+    font-size:1.4em;
+    border-top:1px #3E3E3E solid;
+    border-bottom:1px #666 solid;
+    background-color:#242424;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 4px #000000;
+    -moz-box-shadow: 0px 1px 4px #000000;
+    box-shadow: 0px 1px 4px #000000;
+}
+
+header #menu-bar {
+    margin: 0px 0px 0px 0px;
+    padding: 6px 6px 0px 6px;
+    height: 34px;
+    line-height: 100%;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    box-shadow: 2px 2px 3px #666666;
+    -webkit-box-shadow: 2px 2px 3px #666666;
+    -moz-box-shadow: 2px 2px 3px #666666;
+    background: #8B8B8B;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A9A9A9, endColorstr=#7A7A7A);
+    background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
+    background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+    border: solid 1px #6D6D6D;
+}
+header #menu-bar li {
+    margin: 0px 6px 0px 6px;
+    padding: 0px 0px 6px 0px;
+    float: left;
+    position: relative;
+    /*list-style: none;*/
+}
+header #menu-bar a {
+    font-weight: bold;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    color: #E7E5E5;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px 8px 20px;
+    margin: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-shadow: 2px 2px 3px #000000;
+}
+header #menu-bar .current a, #menu-bar li:hover > a {
+    background: #0399D4;
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#EBEBEB, endColorstr=#A1A1A1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+    background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+    color: #444444;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 3px #FFFFFF;
+}
+header #menu-bar ul li:hover a, #menu-bar li:hover li a {
+    background: none;
+    border: none;
+    color: #666;
+    -box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+header #menu-bar ul a:hover {
+    background: #0399D4 !important;
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#04ACEC, endColorstr=#0186BA);
+    background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+    background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+    color: #FFFFFF !important;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    text-shadow: 2px 2px 2px #FFFFFF;
+}
+header #menu-bar ul {
+    background: #DDDDDD;
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#CFCFCF);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+    background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 140px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: solid 1px #B4B4B4;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 3px #222222;
+    -moz-box-shadow: 2px 2px 3px #222222;
+    box-shadow: 2px 2px 3px #222222;
+}
+header #menu-bar li:hover > ul {
+    display: block;
+}
+header #menu-bar ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+header #menu-bar ul a {
+    padding:10px 0px 10px 15px;
+    color:#424242 !important;
+    font-size:12px;
+    font-style:normal;
+    font-family:arial;
+    font-weight: normal;
+    text-shadow: 2px 2px 3px #FFFFFF;
+}
+header #menu-bar ul li:first-child > a {
+    border-top-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+}
+header #menu-bar ul li:last-child > a {
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+}
+header #menu-bar:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+header #menu-bar {
+    display: inline-block;
+}
+header html[xmlns] #menu-bar {
+    display: block;
+}
+header * html #menu-bar {
+    height: 1%;
+}
+
+/*header h1{
+                text-indent:-10000px;
+                height:80px;
+                background:url(../images/logo.png) top left no-repeat;
+}*/
+
+header ul#menu-bar ul li ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    visibility:visible;
+    position:absolute;
+    z-index: 99999;
+    background:#f8f8f8;
+    box-shadow:1px 1px 3px #ccc;
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    transition:opacity 0.2s linear, visibility 0.2s linear; 
+}
+
+header ul#menu-bar ul li ul {
+    top: 0;
+    left: 140px;
+}
+
+#wrapper aside{
+    width:150px;
+    float:right;
+    padding:10px 10px 10px 10px;
+    background-color:#292929;
+}
+
+#wrapper aside h1{
+    padding:0 0 10px 0;
+}
+
+#wrapper aside nav ul{
+    border:1px solid #666;
+}
+
+#wrapper aside nav ul li a{
+    display:block;
+    padding:10px;
+    background: #333333; /* old browsers */
+    background: -moz-linear-gradient(top, #3f3f3f 0%, #333333 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f3f3f), color-stop(100%,#333333)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#333333',GradientType=0 ); /* ie */
+    border-bottom:1px solid #666;
+    text-decoration:none;
+    color: #999;
+}
+
+#wrapper aside nav ul li a:hover{
+    background: #292929; /* old browsers */
+    background: -moz-linear-gradient(top, #222222 0%, #292929 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#292929)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#292929',GradientType=0 ); /* ie */
+    color: #fff;
+}
+
+#wrapper section {
+    padding:50px;
+    width:250px;
+    background-color: #242424;
+    margin: auto;
+}
+
+#wrapper section article{
+    padding:10px;
+    background-color: #242424;
+    margin:0 0 10px 0;
+}
+
+#wrapper section article h1{
+    margin-bottom:5px;
+    font-size:1.4em;
+}
+
+#wrapper section article p{
+    color:#999;
+}
+
+#footerWrap {
+    /*border-top:1px #666 solid;*/
+    background-color:#242424;
+    overflow:hidden;
+}
+
+#footerWrap aside{
+    width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+#footerWrap aside nav{
+    float:left;
+    width:310px;
+    margin:10px;
+}
+
+#footerWrap aside section#socialMedia{
+    float:right;
+    width:310px;
+    margin:10px 0 10px 10px;
+    text-align:right;
+    height:92px;
+    padding-top:98px
+}
+
+#footerWrap aside section h1{
+    margin-bottom:10px;
+    font-size:1.4em;
+}
+
+#footerWrap aside nav h1{
+    margin-bottom:10px;
+    font-size:1.4em;
+}
+
+#footerWrap aside nav li{
+    line-height:1.5;
+}
+
+#footerWrap aside nav li a{
+    color:#999;
+    text-decoration:none;
+}
+
+#footerWrap aside nav li a:hover{
+    color:#fff;
+}
+
+

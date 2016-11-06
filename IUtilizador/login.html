@@ -1,0 +1,42 @@
+<!-- Código adaptado a partir de http://www.devarticles.com/c/a/PHP/PHP-for-Beginners-by-a-Beginners/1/
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type"
+              content="text/html;charset=utf-8" />
+        <link rel="stylesheet" href="../css/login.css" type="text/css" />
+        <script  type="text/javascript" src="../JScript/script.js"></script>
+        <title>Portal AsynChronous</title>
+    </head>
+    <body onload="MakeXMLHTTPCall(0);">
+        <header>
+            <h1>Portal AsynChronous</h1>
+        </header>
+        <div id="wrapper">
+            <section id="mainLogin">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Utilizador: </td>
+                            <td><input type="text" autofocus="autofocus" id="username" size="20"></td>
+                        </tr>
+                        <tr>
+                            <td>Senha: </td>
+                            <td><input type="password" id="password" size="20"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Entrar" name="login" onclick="MakeXMLHTTPCall(19);"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <article id="resultadoLogin">
+                </article>
+            </section>
+        </div>
+    </body>
+</html>
+
+
+
